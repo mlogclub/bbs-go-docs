@@ -28,6 +28,11 @@ bbs-go 为前后端分离设计，后端接口服务使用简洁的Go语言进�
 - vue.js （[https://vuejs.org](https://vuejs.org)）渐进式 JavaScript 框架
 - Nuxt.js ([https://nuxt.com](https://nuxt.com)) 基于Vue的服务端渲染框架
 
+## 交流群/联系我
+
+![](/images/qq.png)
+
+
 <!-- ## 公众号
 
 > 关注公众号`码农俱乐部`获取更多干货资源。
