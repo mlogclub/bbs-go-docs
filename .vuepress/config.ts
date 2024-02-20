@@ -56,28 +56,28 @@ export default defineUserConfig({
         link: "https://github.com/mlogclub/bbs-go",
       },
     ],
-    bulletin: {
-      body: [
-        {
-          type: "text",
-          content: `🎉🎉🎉 2024，从心出发，共筑简洁社区新时代！`,
-          style: "font-size: 13px;",
-        },
-        // {
-        //   type: "hr",
-        // },
-        {
-          type: "title",
-          content: "交流群/联系我",
-        },
-        {
-          type: "text",
-          content: `
-          <img src="/images/qq.png" style="width: 200px;"/>
-          `,
-          style: "font-size: 12px;",
-        },
-      ],
-    },
+    // bulletin: {
+    //   body: [
+    //     {
+    //       type: "text",
+    //       content: `🎉🎉🎉 2024，从心出发，共筑简洁社区新时代！`,
+    //       style: "font-size: 13px;",
+    //     },
+    //     // {
+    //     //   type: "hr",
+    //     // },
+    //     {
+    //       type: "title",
+    //       content: "交流群/联系我",
+    //     },
+    //     {
+    //       type: "text",
+    //       content: `
+    //       <img src="/images/qq.png" style="width: 200px;"/>
+    //       `,
+    //       style: "font-size: 12px;",
+    //     },
+    //   ],
+    // },
   }),
 });
