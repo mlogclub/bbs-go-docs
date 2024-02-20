@@ -1,3 +1,3 @@
-# site模块配置
+# site模块
 
 TODO

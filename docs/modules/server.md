@@ -1,3 +1,3 @@
-# server模块配置
+# server模块
 
 TODO
