@@ -1,9 +1,9 @@
 {
-  "name": "vuepress-theme-reco-demo",
+  "name": "bbs-go-docs",
   "version": "2.0.0",
-  "description": "Demo for vuepress-theme-reco@2.x.",
+  "description": "bbs-go docs",
   "repository": "git@github.com:recoluan/vuepress-theme-reco-demo.git",
-  "author": "reco_luan <recoluan@outlook.com>",
+  "author": "mlogclub <mlog1@qq.com>",
   "license": "MIT",
   "scripts": {
     "dev": "vuepress dev .",
