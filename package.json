@@ -1,21 +1,10 @@
 {
-  "name": "bbs-go-docs",
-  "version": "2.0.0",
-  "description": "bbs-go docs",
-  "repository": "git@github.com:recoluan/vuepress-theme-reco-demo.git",
-  "author": "mlogclub <mlog1@qq.com>",
-  "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev .",
-    "start": "vuepress dev .",
-    "build": "vuepress build ."
-  },
-  "dependencies": {
-    "vuepress-theme-reco": "2.0.0-rc.5"
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "@vuepress/client": "2.0.0-rc.0",
-    "vue": "^3.4.15",
-    "vuepress": "2.0.0-rc.0"
+    "vitepress": "1.0.0-rc.44"
   }
 }

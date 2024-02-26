@@ -1,5 +1,21 @@
-.vuepress/.cache
-.vuepress/.temp
-.vuepress/dist
 node_modules
-.DS_Store
+.temp
+.vitepress/cache
+dist
+.vscode
+cache
+.eslintcache
+components.d.ts
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# json
+meta.json
