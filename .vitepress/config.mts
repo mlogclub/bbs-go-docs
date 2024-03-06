@@ -114,7 +114,7 @@ export default defineConfig({
 
 
     editLink: {
-      pattern: 'https://github.com/mlogclub/bbs-go-docs/edit/main/docs/:path'
+      pattern: 'https://github.com/mlogclub/bbs-go-docs/edit/master/:path'
     }
 
   }
