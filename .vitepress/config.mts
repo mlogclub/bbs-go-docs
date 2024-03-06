@@ -34,7 +34,24 @@ export default defineConfig({
             },
             {
               text: '手动安装',
-              link: '/docs/getstart/installation.html'
+              link: '/docs/getstart/installation/',
+              collapsed: true,
+              items: [
+                {
+                  text: 'Server模块安装',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: '安装Go',
+                      link: '/docs/getstart/installation/server/install-go',
+                    },
+                    {
+                      text: 'go mod使用帮助',
+                      link: '/docs/getstart/installation/server/go-mod',
+                    }
+                  ]
+                }
+              ]
             },
           ]
         },
@@ -62,6 +79,24 @@ export default defineConfig({
       ]
     },
 
+    outline: {
+      /**
+       * outline 中要显示的标题级别。
+       * 单个数字表示只显示该级别的标题。
+       * 如果传递的是一个元组，第一个数字是最小级别，第二个数字是最大级别。
+       * `'deep'` 与 `[2, 6]` 相同，将显示从 `<h2>` 到 `<h6>` 的所有标题。
+       *
+       * @default 2
+       */
+      level: [2, 5],
+      /**
+       * 显示在 outline 上的标题。
+       *
+       * @default 'On this page'
+       */
+      label: '页面导航'
+    },
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/mlogclub/bbs-go' },
       {
@@ -74,7 +109,12 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the GPL License.',
-      copyright: 'Copyright © 2024 BBS-GO'
+      copyright: 'Copyright © ' + new Date().getFullYear().toString() + ' BBS-GO'
+    },
+
+
+    editLink: {
+      pattern: 'https://github.com/mlogclub/bbs-go-docs/edit/main/docs/:path'
     }
 
   }
