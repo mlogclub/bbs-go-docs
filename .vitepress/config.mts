@@ -5,6 +5,7 @@ export default defineConfig({
   title: "BBS-GO",
   description: "BBS-GO 简洁对话，高效互动，社区新体验！",
   ignoreDeadLinks: 'localhostLinks',
+  lastUpdated: false,
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -48,6 +49,28 @@ export default defineConfig({
                     {
                       text: 'go mod使用帮助',
                       link: '/docs/getstart/installation/server/go-mod',
+                    },
+                    {
+                      text: 'Server 模块安装',
+                      link: '/docs/getstart/installation/server/install',
+                    }
+                  ]
+                },
+                {
+                  text: 'Site模块安装',
+                  collapsed: false,
+                  items: [
+                    {
+                      text: 'NodeJS环境安装',
+                      // link: '/docs/getstart/installation/server/install-go',
+                    },
+                    // {
+                    //   text: 'go mod使用帮助',
+                    //   link: '/docs/getstart/installation/server/go-mod',
+                    // },
+                    {
+                      text: 'Site模块安装',
+                      // link: '/docs/getstart/installation/server/install',
                     }
                   ]
                 }
@@ -56,26 +79,30 @@ export default defineConfig({
           ]
         },
         {
-          text: '模块',
-          items: [
-            {
-              text: '模块介绍',
-              link: '/docs/modules/'
-            },
-            {
-              text: 'server介绍',
-              link: '/docs/modules/server.html'
-            },
-            {
-              text: 'site介绍',
-              link: '/docs/modules/site.html'
-            },
-            {
-              text: 'admin介绍',
-              link: '/docs/modules/admin.html'
-            },
-          ]
-        }
+          text: '更新日志',
+          // link: ''
+        },
+        // {
+        //   text: '模块',
+        //   items: [
+        //     {
+        //       text: '模块介绍',
+        //       link: '/docs/modules/'
+        //     },
+        //     {
+        //       text: 'server介绍',
+        //       link: '/docs/modules/server.html'
+        //     },
+        //     {
+        //       text: 'site介绍',
+        //       link: '/docs/modules/site.html'
+        //     },
+        //     {
+        //       text: 'admin介绍',
+        //       link: '/docs/modules/admin.html'
+        //     },
+        //   ]
+        // }
       ]
     },
 
@@ -115,7 +142,7 @@ export default defineConfig({
 
     editLink: {
       pattern: 'https://github.com/mlogclub/bbs-go-docs/edit/master/:path'
-    }
+    },
 
   }
 })

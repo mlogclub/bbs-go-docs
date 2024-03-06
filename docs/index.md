@@ -32,7 +32,6 @@ bbs-go 为前后端分离设计，后端接口服务使用简洁的Go语言进�
 
 ![](/images/qq.png)
 
-
 <!-- ## 公众号
 
 > 关注公众号`码农俱乐部`获取更多干货资源。
@@ -42,4 +41,6 @@ bbs-go 为前后端分离设计，后端接口服务使用简洁的Go语言进�
 ## 问题反馈
 
 - 问题反馈：[https://mlog.club/topic/create?nodeId=6](https://mlog.club/topic/create?nodeId=6)
-- 功能建议：[https://mlog.club/topic/609](https://mlog.club/topic/609) -->
+- 功能建议：[https://mlog.club/topic/609](https://mlog.club/topic/609)
+
+-->
