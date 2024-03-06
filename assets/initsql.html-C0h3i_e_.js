@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-6a67785c","path":"/docs/internal/initsql.html","title":"SQL初始化脚本","lang":"en-US","frontmatter":{},"headers":[],"git":{"createdTime":1708487101000,"updatedTime":1708487101000,"contributors":[{"name":"mlogclub","email":"mlog1@qq.com","commits":1}]},"filePathRelative":"docs/internal/initsql.md"}');export{t as data};

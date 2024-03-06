@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-5b0633ad","path":"/docs/modules/admin.html","title":"admin模块","lang":"en-US","frontmatter":{},"headers":[],"git":{"createdTime":1708487101000,"updatedTime":1708487101000,"contributors":[{"name":"mlogclub","email":"mlog1@qq.com","commits":1}]},"filePathRelative":"docs/modules/admin.md"}');export{e as data};
