@@ -34,10 +34,14 @@ export default defineConfig({
               link: '/docs/getstart/docker.html'
             },
             {
-              text: '手动安装',
-              link: '/docs/getstart/installation/',
+              text: '源码编译安装',
+              // link: '/docs/getstart/installation/',
               collapsed: true,
               items: [
+                {
+                  text: '代码结构',
+                  link: '/docs/getstart/installation/',
+                },
                 {
                   text: 'Server模块安装',
                   collapsed: false,
@@ -62,15 +66,9 @@ export default defineConfig({
                   items: [
                     {
                       text: 'NodeJS环境安装',
-                      // link: '/docs/getstart/installation/server/install-go',
                     },
-                    // {
-                    //   text: 'go mod使用帮助',
-                    //   link: '/docs/getstart/installation/server/go-mod',
-                    // },
                     {
                       text: 'Site模块安装',
-                      // link: '/docs/getstart/installation/server/install',
                     }
                   ]
                 }
@@ -80,29 +78,10 @@ export default defineConfig({
         },
         {
           text: '更新日志',
-          // link: ''
         },
-        // {
-        //   text: '模块',
-        //   items: [
-        //     {
-        //       text: '模块介绍',
-        //       link: '/docs/modules/'
-        //     },
-        //     {
-        //       text: 'server介绍',
-        //       link: '/docs/modules/server.html'
-        //     },
-        //     {
-        //       text: 'site介绍',
-        //       link: '/docs/modules/site.html'
-        //     },
-        //     {
-        //       text: 'admin介绍',
-        //       link: '/docs/modules/admin.html'
-        //     },
-        //   ]
-        // }
+        {
+          text: '常见问题',
+        },
       ]
     },
 
