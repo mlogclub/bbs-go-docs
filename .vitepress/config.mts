@@ -78,6 +78,7 @@ export default defineConfig({
         },
         {
           text: '更新日志',
+          link: '/docs/changelog.md'
         },
         {
           text: '常见问题',
