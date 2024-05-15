@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /docs/getstart/
+      link: /docs/getstart/docker.html
     - theme: alt
       text: 交流社区
       link: https://mlog.club

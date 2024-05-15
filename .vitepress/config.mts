@@ -40,7 +40,7 @@ export default defineConfig({
               items: [
                 {
                   text: '代码结构',
-                  link: '/docs/getstart/installation/',
+                  link: '/docs/getstart/installation/index.html',
                 },
                 {
                   text: 'server 模块安装',
@@ -48,15 +48,15 @@ export default defineConfig({
                   items: [
                     {
                       text: '安装Go语言环境',
-                      link: '/docs/getstart/installation/server/install-go',
+                      link: '/docs/getstart/installation/server/install-go.html',
                     },
                     {
                       text: 'go mod 使用帮助',
-                      link: '/docs/getstart/installation/server/go-mod',
+                      link: '/docs/getstart/installation/server/go-mod.html',
                     },
                     {
                       text: 'server 模块安装',
-                      link: '/docs/getstart/installation/server/install',
+                      link: '/docs/getstart/installation/server/install.html',
                     }
                   ]
                 },
