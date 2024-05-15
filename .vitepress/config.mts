@@ -43,32 +43,32 @@ export default defineConfig({
                   link: '/docs/getstart/installation/',
                 },
                 {
-                  text: 'Server模块安装',
+                  text: 'server 模块安装',
                   collapsed: false,
                   items: [
                     {
-                      text: '安装Go',
+                      text: '安装Go语言环境',
                       link: '/docs/getstart/installation/server/install-go',
                     },
                     {
-                      text: 'go mod使用帮助',
+                      text: 'go mod 使用帮助',
                       link: '/docs/getstart/installation/server/go-mod',
                     },
                     {
-                      text: 'Server 模块安装',
+                      text: 'server 模块安装',
                       link: '/docs/getstart/installation/server/install',
                     }
                   ]
                 },
                 {
-                  text: 'Site模块安装',
+                  text: 'site 模块安装',
                   collapsed: false,
                   items: [
                     {
-                      text: 'NodeJS环境安装',
+                      text: 'nodejs 环境安装',
                     },
                     {
-                      text: 'Site模块安装',
+                      text: 'site 模块安装',
                     }
                   ]
                 }
@@ -82,6 +82,7 @@ export default defineConfig({
         },
         {
           text: '常见问题',
+          link: '/docs/qa.md'
         },
       ]
     },
