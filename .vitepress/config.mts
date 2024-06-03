@@ -13,7 +13,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '文档', link: '/docs/' },
-      { text: '演示', link: 'https://mlog.club' },
+      { text: '演示', link: 'https://bbs.bbs-go.com' },
     ],
 
     search: {

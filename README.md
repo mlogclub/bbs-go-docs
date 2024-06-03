@@ -26,7 +26,7 @@ bannerBrand:
     - {
         icon: "Forum",
         text: "社区",
-        link: "https://mlog.club",
+        link: "https://bbs.bbs-go.com",
         # type: "plain",
       }
 isShowTitleInHome: true

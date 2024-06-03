@@ -169,7 +169,7 @@ https://api.github.com/repos/mlogclub/bbs-go/releases?page=1&per_page=100
 
 发布地址: <https://github.com/mlogclub/bbs-go/releases/tag/v3.2.5>
 
-- Feature：全新的签到、排行榜样式，感谢[Alice Re-Code](https://mlog.club/user/2806)贡献代码
+- Feature：全新的签到、排行榜样式，感谢[Alice Re-Code](https://bbs.bbs-go.com/user/2806)贡献代码
 - Bugfix：修复注册链接跳转失效的问题
 - Bugfix：修复帖子管理菜单权限控制错误的问题
 - Bugfix：修复头像展示变形的问题
@@ -408,7 +408,7 @@ https://api.github.com/repos/mlogclub/bbs-go/releases?page=1&per_page=100
 ## v3.0.3 (2019-11-11)
 
 发布地址: <https://github.com/mlogclub/bbs-go/releases/tag/v3.0.3>
-功能建议收集：<https://mlog.club/topic/609>
+功能建议收集：<https://bbs.bbs-go.com/topic/609>
 
 - 支持 Docker 快速部署 ( 感谢热心用户 @athom 的 PR https://github.com/mlogclub/bbs-go/pull/25 )
 - 新增本地快速构建脚本
@@ -423,7 +423,7 @@ https://api.github.com/repos/mlogclub/bbs-go/releases?page=1&per_page=100
 ## v3.0.2 (2019-10-29)
 
 发布地址: <https://github.com/mlogclub/bbs-go/releases/tag/v3.0.2>
-功能建议收集：<https://mlog.club/topic/609>
+功能建议收集：<https://bbs.bbs-go.com/topic/609>
 
 - QQ 登录
 - 密码注册

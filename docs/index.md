@@ -18,7 +18,7 @@ bbs-go 为前后端分离设计，后端接口服务使用简洁的 Go 语言进
 
 - Github：[https://github.com/mlogclub/bbs-go](https://github.com/mlogclub/bbs-go)
 - 码云：[https://gitee.com/mlogclub/bbs-go](https://gitee.com/mlogclub/bbs-go)
-- 交流/演示站：[码农俱乐部](https://mlog.club)
+- 交流/演示站：[码农俱乐部](https://bbs.bbs-go.com)
 
 ## 技术栈
 
@@ -41,7 +41,7 @@ bbs-go 为前后端分离设计，后端接口服务使用简洁的 Go 语言进
 
 ## 问题反馈
 
-- 问题反馈：[https://mlog.club/topic/create?nodeId=6](https://mlog.club/topic/create?nodeId=6)
-- 功能建议：[https://mlog.club/topic/609](https://mlog.club/topic/609)
+- 问题反馈：[https://bbs.bbs-go.com/topic/create?nodeId=6](https://bbs.bbs-go.com/topic/create?nodeId=6)
+- 功能建议：[https://bbs.bbs-go.com/topic/609](https://bbs.bbs-go.com/topic/609)
 
 -->

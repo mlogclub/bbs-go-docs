@@ -16,7 +16,7 @@ hero:
       link: /docs/getstart/docker.html
     - theme: alt
       text: 交流社区
-      link: https://mlog.club
+      link: https://bbs.bbs-go.com
 
 features:
   - title: 简洁至上
