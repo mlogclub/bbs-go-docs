@@ -66,9 +66,11 @@ export default defineConfig({
                   items: [
                     {
                       text: 'nodejs 环境安装',
+                      link: '/docs/getstart/installation/site/install-node.html',
                     },
                     {
                       text: 'site 模块安装',
+                      link: '/docs/getstart/installation/site/install-site.html',
                     }
                   ]
                 }

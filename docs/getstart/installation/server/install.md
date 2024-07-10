@@ -26,13 +26,13 @@ go build
 
 ## 配置
 
-系统提供了配置示例文件：`bbs-go.example.yaml`，将他复制一份，并命名为：`bbs-go.dev.yaml`，然后将`bbs-go.dev.yaml`中的配置修改为你自己的配置。配置示例如下：
+系统提供了配置示例文件：`bbs-go.example.yaml`，将他复制一份，并命名为：`bbs-go.yaml`，然后将`bbs-go.yaml`中的配置修改为你自己的配置。
+
+配置示例如下：
 
 ```yaml
-Env: prod # 环境，线上环境：prod、测试环境：dev
+Port: 8082 # 服务端口
 BaseUrl: https://mlog.club # 网站域名
-Port: 8082 # 端口
-StaticPath: /data/www  # 根路径下的静态文件目录，可配置绝对路径
 IpDataPath: # IP数据文件，默认读取当前目录下ip2region.xdb文件，最新数据文件请从这里下载：https://github.com/lionsoul2014/ip2region/tree/master/data
 AllowedOrigins:
   - "*"
@@ -57,16 +57,16 @@ Uploader:
   Enable: Oss
   # 阿里云oss配置
   AliyunOss:
-    Host: 请配置成你自己的
-    Bucket: 请配置成你自己的
-    Endpoint: 请配置成你自己的
-    AccessId: 请配置成你自己的
-    AccessSecret: 请配置成你自己的
-    StyleSplitter: 阿里云oss图片样式分隔符
-    StyleAvatar: 头像图片样式名称
-    StylePreview: 预览图片样式名称
-    StyleSmall: 小图样式名称
-    StyleDetail: 详情图片样式名称
+    Host: 
+    Bucket: 
+    Endpoint: 
+    AccessId: 
+    AccessSecret: 
+    StyleSplitter: 
+    StyleAvatar: 
+    StylePreview: 
+    StyleSmall: 
+    StyleDetail: 
   # 本地文件上传
   Local:
     Host: https://st.mlog.club/ # 上传文件域名
@@ -76,8 +76,8 @@ Uploader:
 Smtp:
   Host: smtp.qq.com
   Port: 25
-  Username: 请配置成你自己的
-  Password: 请配置成你自己的
+  Username: 
+  Password: 
   SSL: true
 
 # 百度SEO相关配置
@@ -99,35 +99,3 @@ Es:
   Index: bbsgo_topic_1
 
 ```
-
-### 基本配置
-
-> TODO
-
-### 日志配置
-
-> TODO
-
-### 数据库配置
-
-> TODO
-
-### 上传配置
-
-> TODO
-
-### ElasticSearch配置
-
-> TODO
-
-### SMTP邮箱服务配置
-
-> TODO
-
-### 百度SEO配置
-
-> TODO
-
-### 神马搜索SEO配置
-
-> TODO
