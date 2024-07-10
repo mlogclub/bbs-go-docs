@@ -99,3 +99,15 @@ Es:
   Index: bbsgo_topic_1
 
 ```
+
+## 启动
+
+启动前请先正确安装MySQL数据库，创建并配置数据库链接，执行SQL初始化脚本。SQL脚本内容请加QQ群获取：
+
+![](/images/qq.png)
+
+然后在`server`目录执行下面命令启动服务：
+
+```shell
+go run main.go
+```
