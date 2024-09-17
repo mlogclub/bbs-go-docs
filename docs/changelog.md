@@ -5,6 +5,20 @@
 https://api.github.com/repos/mlogclub/bbs-go/releases?page=1&per_page=100
 -->
 
+## v4.0.3 (2024-09-17)
+
+1. 升级`Dockerfile`和`docker-compose.yml`，完善docker部署流程
+2. 多处细节优化
+
+发布地址: <https://github.com/mlogclub/bbs-go/releases/tag/v4.0.3>
+
+## v4.0.1 (2024-05-16)
+
+1. 重构搜索功能，使用`bleve`实现搜索
+2. 多项细节优化和BUG修复
+
+发布地址: <https://github.com/mlogclub/bbs-go/releases/tag/v4.0.1>
+
 ## v4.0.0 (2024-02-21)
 
 发布地址: <https://github.com/mlogclub/bbs-go/releases/tag/v4.0.0>
