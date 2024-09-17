@@ -29,6 +29,8 @@
 - 前台: [http://localhost:3000](http://localhost:3000)
 - 后台: [http://localhost:3000/admin](http://localhost:3000/admin)
 
+初始账号密码 [详见文档>>](https://bbs-go.com/docs/qa.html#%E5%88%9D%E5%A7%8B%E5%8C%96%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81)
+
 ## docker启动进阶配置
 
 上述文档讲解的启动流程是使用`docker-compose`启动的，所以想要了解更多配置信息可以查看项目根目录中的`docker-compose.yml`。
