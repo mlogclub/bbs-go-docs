@@ -119,7 +119,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the GPL License.',
-      copyright: 'Copyright © ' + new Date().getFullYear().toString() + ' BBS-GO'
+      copyright: 'Copyright © ' + new Date().getFullYear().toString() + ' 武汉花贝科技有限公司 • <a href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备2022019684号-3</a>'
     },
 
 
