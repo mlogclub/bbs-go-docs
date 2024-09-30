@@ -12,7 +12,8 @@ export default defineConfig({
     logo: "/images/logo.png",
     nav: [
       { text: '首页', link: '/' },
-      { text: '文档', link: '/docs/' },
+      { text: '使用手册', link: '/docs/' },
+      { text: '联系我', link: '/docs/contact' },
       { text: '演示', link: 'https://bbs.bbs-go.com' },
     ],
 
