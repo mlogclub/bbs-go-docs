@@ -7,6 +7,21 @@ export default defineConfig({
   ignoreDeadLinks: 'localhostLinks',
   lastUpdated: false,
 
+  head:[
+    [
+      'script', {}, 
+      `
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?e2e4ad7ed76bae92afe7362f23efcea2";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+      `
+    ]
+  ],
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/images/logo.png",
