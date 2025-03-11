@@ -5,6 +5,14 @@
 https://api.github.com/repos/mlogclub/bbs-go/releases?page=1&per_page=100
 -->
 
+## v4.0.5 (2025-02-24)
+
+1. 全新的UI
+2. 更细致的权限控制
+3. 更快捷的部署方式
+
+发布地址: <https://github.com/mlogclub/bbs-go/releases/tag/v4.0.5>
+
 ## v4.0.3 (2024-09-17)
 
 1. 升级`Dockerfile`和`docker-compose.yml`，完善docker部署流程
