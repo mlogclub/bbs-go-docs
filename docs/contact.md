@@ -1,11 +1,17 @@
 # 联系我
 
-🎉🎉🎉 2024，从心出发，共筑简洁社区新时代！
-
-### QQ交流群
-
-![BBS-GO用户交流群](/images/qq.png)
+🎉🎉🎉 2025，从心出发，共筑简洁社区新时代！
 
 ### 商用咨询
 
-![](/images/wechat.png)
+![微信](/images/wechat.png)
+
+### QQ交流群
+
+#### BBS-GO交流群2
+
+![BBS-GO交流群](/images/qq3.png)
+
+#### BBS-GO交流群1(已满)
+
+![BBS-GO交流群](/images/qq2.png)
