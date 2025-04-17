@@ -13,7 +13,7 @@
       <span>QQ群</span>
       <div class="qr-code">
         <div class="qr-title">BBS-GO交流群</div>
-        <img src="/images/qq.png" alt="QQ二维码">
+        <img src="/images/qq3.png" alt="QQ二维码">
       </div>
     </div>
   </div>
