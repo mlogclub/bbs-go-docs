@@ -142,30 +142,40 @@
  * -------------------------------------------------------------------------- */
 
 .contact-float {
-  padding: 10px 0;
+  padding: 12px 8px;
   position: fixed;
   bottom: 160px;
   right: 20px;
   background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   z-index: 1000;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.contact-float:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 .contact-item {
   position: relative;
   cursor: pointer;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 8px;
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-width: 60px;
-  gap: 4px;
+  gap: 6px;
+}
+
+.contact-item:hover {
+  background-color: rgba(0, 0, 0, 0.03);
 }
 
 .contact-item img.icon {
@@ -192,13 +202,13 @@
 
 .qr-code {
   position: absolute;
-  right: calc(100% + 10px);
+  right: calc(100% + 12px);
   top: 50%;
   transform: translateY(-50%) translateX(20px);
   background: white;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -208,6 +218,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .qr-title {
@@ -229,6 +240,22 @@
   object-fit: contain;
 }
 
+.dark .qr-code {
+  background: #252529;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dark .qr-code img {
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.dark .qr-title {
+  color: #e0e0e0;
+}
+
 .contact-item:hover .qr-code {
   opacity: 1;
   visibility: visible;
@@ -238,12 +265,18 @@
 .qr-code::after {
   content: '';
   position: absolute;
-  right: -8px;
+  right: -9px;
   top: 50%;
   transform: translateY(-50%);
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 8px solid white;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 9px solid white;
+  filter: drop-shadow(2px 0 2px rgba(0, 0, 0, 0.05));
+}
+
+.dark .qr-code::after {
+  border-left-color: #252529;
+  filter: drop-shadow(2px 0 2px rgba(0, 0, 0, 0.2));
 }
 
 /* 添加一个透明的区域来扩大悬停范围 */
@@ -259,19 +292,33 @@
 
 /* 深色模式支持 */
 .dark .contact-float {
-  background: #2d2d2d;
+  background: #252529;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+.dark .contact-float:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.dark .contact-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
 .dark .contact-item span {
-  color: #aaa;
+  color: #e0e0e0;
 }
+
+.dark .contact-item img.icon {
+  filter: invert(1);
+}
+
+.dark .contact-item:hover img.icon {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(50%) saturate(500%) hue-rotate(180deg) brightness(100%) contrast(95%);
+}
+
 .dark .contact-item:hover span {
-  color: #2196F3;
-}
-.dark .qr-code {
-  background: #2d2d2d;
-}
-.dark .qr-code::after {
-  border-left-color: #2d2d2d;
+  color: #42a5f5;
 }
 
 /* 移动端适配 */
@@ -279,10 +326,12 @@
   .contact-float {
     bottom: 70px;
     right: 10px;
+    padding: 10px 6px;
   }
   
   .contact-item {
     min-width: 50px;
+    gap: 4px;
   }
   
   .qr-code {
@@ -291,6 +340,7 @@
     transform: translateX(20px);
     width: 120px;
     height: auto;
+    padding: 10px;
   }
   
   .qr-code img {
@@ -306,6 +356,13 @@
     right: -8px;
     top: 20px;
     transform: none;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid white;
+  }
+  
+  .dark .qr-code::after {
+    border-left-color: #252529;
   }
 }
 
