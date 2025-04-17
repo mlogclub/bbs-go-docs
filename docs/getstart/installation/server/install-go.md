@@ -18,11 +18,13 @@
 2. 双击安装包并按照安装向导进行安装
 3. 默认情况下，Go 会安装到 `/usr/local/go` 目录
 4. 打开终端，编辑 `~/.zshrc` 或 `~/.bash_profile` 文件，添加以下环境变量：
+
    ```bash
    export GOPATH=$HOME/go
    export GOROOT=/usr/local/go
    export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
    ```
+
 5. 执行 `source ~/.zshrc` 或 `source ~/.bash_profile` 使配置生效
 6. 输入 `go version` 验证安装是否成功
 

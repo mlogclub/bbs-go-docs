@@ -11,13 +11,13 @@ bbs-go采用前后端分离设计，一共分为三个模块：
 ## 获取最新源码
 
 :::tip
-请先确保会使用Git，Git使用教程：https://www.google.com
+请先确保会使用Git，Git使用教程：<https://www.google.com>
 :::
 
 GitHub和Gitee上都有最新版本的源码，项目地址分别为：
 
-* https://github.com/mlogclub/bbs-go
-* https://gitee.com/mlogclub/bbs-go
+* <https://github.com/mlogclub/bbs-go>
+* <https://gitee.com/mlogclub/bbs-go>
 
 以GitHub为例，执行下面命令将代码Clone到本地
 
@@ -174,12 +174,6 @@ Admin 模块的配置主要是通过环境变量文件（`.env.development`、`.
 VITE_API_BASE_URL=http://localhost:8082  # Server 模块地址
 VITE_API_SITE_URL=http://localhost:3000  # Site 模块地址
 ```
-
-### Docker 部署
-
-除了手动安装外，BBS-Go 也支持使用 Docker 和 Docker Compose 进行部署。项目根目录下的 `docker-compose.yml` 文件提供了完整的部署配置。
-
-详细的 Docker 部署步骤请参考：[Docker 部署](../docker.md)
 
 ## 常见问题
 
