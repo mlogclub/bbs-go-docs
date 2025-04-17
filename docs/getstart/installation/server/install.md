@@ -215,9 +215,9 @@ DB:
 
 # 上传配置
 Uploader:
-  # 启用上传方式：Local（本地存储）或 Oss（阿里云对象存储）
+  # 启用上传方式：Oss（阿里云对象存储）
   Enable: Oss
-  # 阿里云oss配置（仅当 Enable: Oss 时有效）
+  # 阿里云oss配置
   AliyunOss:
     Host: # OSS 访问域名，如 https://your-bucket.oss-cn-beijing.aliyuncs.com
     Bucket: # OSS 存储空间名称
@@ -229,10 +229,6 @@ Uploader:
     StylePreview: # 预览图片样式名称
     StyleSmall: # 小图样式名称
     StyleDetail: # 详情图片样式名称
-  # 本地文件上传配置（仅当 Enable: Local 时有效）
-  Local:
-    Host: https://st.mlog.club/ # 上传文件访问域名
-    Path: /data/www/st.mlog.club # 上传文件保存目录，确保该目录存在且有写入权限
 
 # 邮件服务器配置，用于邮件通知
 Smtp:
@@ -271,18 +267,9 @@ Es:
    例如：`DB.Url: root:123456@tcp(localhost:3306)/bbsgo_db?charset=utf8mb4&parseTime=True&loc=Local`
 
 2. **文件上传配置（Uploader）**：
-   - 如果使用阿里云 OSS，将 `Enable` 设置为 `Oss`，并配置 `AliyunOss` 部分
-   - 如果使用本地存储，将 `Enable` 设置为 `Local`，并配置 `Local` 部分
-   - 新手推荐使用本地存储模式，配置示例：
-     ```yaml
-     Uploader:
-       Enable: Local
-       Local:
-         Host: http://localhost:8082/upload  # 上传文件访问域名
-         Path: ./upload  # 相对路径，指向 server 目录下的 upload 文件夹
-     ```
-   - 本地存储模式下，需要确保 `Path` 目录存在且具有写入权限
-   - Windows 用户注意：路径分隔符可以使用 `/` 或 `\\`，推荐使用 `/`
+   - 系统目前仅支持阿里云 OSS 存储
+   - 您需要在阿里云控制台创建 OSS 存储空间，并获取相关的访问凭证
+   - 必须正确配置 `AliyunOss` 部分的所有字段
 
 3. **日志配置（Logger）**：
    - Windows 用户需要修改 `Filename` 路径，例如：`C:/logs/bbs-go.log`
@@ -291,7 +278,7 @@ Es:
 
 4. **网站基本信息**：
    - `Port`：服务监听端口，如果 8082 被占用，可以改为其他端口
-   - `BaseUrl`：在开发环境中可以设置为 `http://localhost:8082`
+   - `BaseUrl`：在开发环境中可以设置为 `http://localhost:3000`
 
 ## 环境变量
 
@@ -479,14 +466,15 @@ Invoke-WebRequest -Uri http://localhost:8082/api/user/current
 - 在 Windows 系统中，可以使用 `netstat -ano | findstr 8082` 查找占用端口的进程
 - 在 Linux/macOS 系统中，可以使用 `lsof -i :8082` 查找占用端口的进程
 
-### 5. 文件上传问题
+### 5. 阿里云 OSS 配置问题
 
-**问题**：上传文件失败
+**问题**：文件上传失败或无法访问已上传的文件
 
 **可能的解决方案**：
-- 如果使用本地存储，确保上传目录存在且有写入权限
-- 检查配置文件中的上传路径是否正确
-- 检查磁盘空间是否充足
+- 确认阿里云 OSS 配置信息正确，包括 AccessId、AccessSecret 等
+- 检查 OSS 存储空间是否正确创建并设置了适当的访问权限
+- 验证 OSS 存储空间的域名是否能够正常访问
+- 在阿里云控制台检查 AccessKey 是否有效
 
 ### 6. 日志文件问题
 
