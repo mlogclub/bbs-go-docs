@@ -6,12 +6,10 @@
 
 ![微信](/images/wechat.png)
 
-### QQ交流群
-
-#### BBS-GO交流群2
+### BBS-GO交流群2
 
 ![BBS-GO交流群](/images/qq3.png)
 
-#### BBS-GO交流群1(已满)
+### BBS-GO交流群1(已满)
 
 ![BBS-GO交流群](/images/qq2.png)
