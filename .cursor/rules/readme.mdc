@@ -1,0 +1,13 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Your rule content
+
+这个项目是 BBS-GO 论坛系统的官方文档网站，主要特点如下：
+项目简介：BBS-GO 是一款基于 Go 语言研发的开源、前后端分离、精美小巧、跨平台的社区（论坛）系统。
+
+使用 VitePress 构建的文档网站
+包含了项目介绍、安装指南、功能说明、常见问题等内容
