@@ -3,7 +3,8 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
-import ContactFloat from './ContactFloat.vue'
+import ContactFloat from './components/ContactFloat.vue'
+import Features from './components/Features.vue'
 
 export default {
   extends: DefaultTheme,
@@ -14,6 +15,7 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
+    // 注册 Features 组件
+    app.component('Features', Features)
   }
 } satisfies Theme
