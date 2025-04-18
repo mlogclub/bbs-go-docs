@@ -39,7 +39,7 @@ export default defineConfig({
     sidebar: {
       "/docs/": [
         {
-          text: '简介',
+          text: '项目介绍',
           link: '/docs/'
         },
         {
