@@ -8,7 +8,7 @@
       <!-- 社区互动 -->
       <div class="feature-card">
         <h3>
-          <i class="fas fa-comments"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
           社区互动
         </h3>
         <ul class="feature-list">
@@ -21,7 +21,10 @@
 
       <!-- 用户系统 -->
       <div class="feature-card">
-        <h3><i class="fas fa-user"></i> 用户系统</h3>
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          用户系统
+        </h3>
         <ul class="feature-list">
           <li>邮箱注册登录</li>
           <li>个人中心管理</li>
@@ -32,7 +35,10 @@
 
       <!-- 内容管理 -->
       <div class="feature-card">
-        <h3><i class="fas fa-file-alt"></i> 内容管理</h3>
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          内容管理
+        </h3>
         <ul class="feature-list">
           <li>文章发布与编辑</li>
           <li>标签分类管理</li>
@@ -43,7 +49,10 @@
 
       <!-- 积分系统 -->
       <div class="feature-card">
-        <h3><i class="fas fa-star"></i> 积分系统</h3>
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          积分系统
+        </h3>
         <ul class="feature-list">
           <li>发帖获取积分</li>
           <li>评论获取积分</li>
@@ -54,7 +63,10 @@
 
       <!-- 搜索功能 -->
       <div class="feature-card">
-        <h3><i class="fas fa-search"></i> 搜索系统</h3>
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          搜索系统
+        </h3>
         <ul class="feature-list">
           <li>全文检索功能</li>
           <li>话题搜索</li>
@@ -65,7 +77,10 @@
 
       <!-- 动态系统 -->
       <div class="feature-card">
-        <h3><i class="fas fa-rss"></i> 动态系统</h3>
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle><circle cx="19" cy="5" r="1"></circle><path d="M10.59 10.59a2 2 0 0 0 2.83 2.83"></path></svg>
+          动态系统
+        </h3>
         <ul class="feature-list">
           <li>发表动态</li>
           <li>图片动态</li>
@@ -78,7 +93,7 @@
 </template>
 
 <script setup>
-// 组件逻辑
+// 不需要导入Lucide图标组件，直接使用SVG
 </script>
 
 <style scoped>
@@ -133,9 +148,11 @@
   gap: 12px;
 }
 
-.feature-card h3 i {
+.icon {
   color: var(--vp-c-brand);
-  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.5;
 }
 
 .feature-list {
@@ -220,7 +237,7 @@
 
 /* 添加响应式悬停效果 */
 @media (hover: hover) {
-  .feature-card:hover h3 i {
+  .feature-card:hover .icon {
     transform: scale(1.1) rotate(5deg);
   }
 
