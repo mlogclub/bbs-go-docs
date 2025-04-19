@@ -238,17 +238,21 @@ import { MessageSquare, User, FileText, Star, Search, Activity } from 'lucide-vu
 /* 添加响应式悬停效果 */
 @media (hover: hover) {
   .feature-card:hover .icon {
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+  }
+
+  .feature-list li {
+    transition: all 0.2s ease;
   }
 
   .feature-list li:hover {
-    color: var(--vp-c-brand-1);
-    transform: translateX(5px);
+    color: var(--vp-c-brand);
+    padding-left: 24px;
   }
 
-  .feature-list li:hover::before {
-    transform: scale(1.2);
-    opacity: 1;
+  .feature-list li::before {
+    transition: all 0.2s ease;
   }
 }
 </style>
