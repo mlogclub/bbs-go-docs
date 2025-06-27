@@ -7,9 +7,9 @@ export default defineConfig({
   ignoreDeadLinks: 'localhostLinks',
   lastUpdated: false,
 
-  head:[
+  head: [
     [
-      'script', {}, 
+      'script', {},
       `
       var _hmt = _hmt || [];
       (function() {
@@ -55,14 +55,32 @@ export default defineConfig({
         },
         {
           text: '🚀 快速开始',
+          link: '/docs/getstart/docker.html',
+          // items: [
+          //   {
+          //     text: '🐳 Docker 部署',
+          //     link: '/docs/getstart/docker.html'
+          //   },
+          //   {
+          //     text: '🐳 Docker 部署',
+          //     link: '/docs/getstart/docker.html'
+          //   },
+          //   {
+          //     text: '🐳 Docker 部署',
+          //     link: '/docs/getstart/docker.html'
+          //   },
+          // ]
+        },
+        {
+          text: '🐳 Docker 部署',
+          link: '/docs/getstart/docker.html'
+        },
+        {
+          text: '⚙️ 源码部署',
+          // collapsed: false,
+          link: '/docs/getstart/installation/index.html',
           items: [
             {
-              text: '🐳 Docker 部署',
-              link: '/docs/getstart/docker.html'
-            },
-            {
-              text: '⚙️ 源码部署',
-              collapsed: false,
               items: [
                 {
                   text: '📋 部署说明',
@@ -70,7 +88,7 @@ export default defineConfig({
                 },
                 {
                   text: '🖥️ 后端服务',
-                  collapsed: false,
+                  collapsed: true,
                   items: [
                     {
                       text: 'Go 环境',
@@ -84,7 +102,7 @@ export default defineConfig({
                 },
                 {
                   text: '🌐 前端应用',
-                  collapsed: false,
+                  collapsed: true,
                   items: [
                     {
                       text: 'Node.js 环境',
@@ -95,9 +113,23 @@ export default defineConfig({
                       link: '/docs/getstart/installation/site/install-site.html',
                     }
                   ]
+                },
+                {
+                  text: '🔧 管理后台',
+                  collapsed: true,
+                  items: [
+                    // {
+                    //   text: 'Node.js 环境',
+                    //   link: '/docs/getstart/installation/site/install-node.html',
+                    // },
+                    // {
+                    //   text: '应用部署',
+                    //   link: '/docs/getstart/installation/site/install-site.html',
+                    // }
+                  ]
                 }
               ]
-            },
+            }
           ]
         },
         {
