@@ -1,1 +1,0 @@
-import{_ as e,c as t,o,a2 as l}from"./chunks/framework.v2dllGfT.js";const h=JSON.parse('{"title":"常见问题","description":"","frontmatter":{},"headers":[],"relativePath":"docs/qa.md","filePath":"docs/qa.md"}'),r={name:"docs/qa.md"};function i(s,a,c,d,n,_){return o(),t("div",null,a[0]||(a[0]=[l("",7)]))}const m=e(r,[["render",i]]);export{h as __pageData,m as default};
