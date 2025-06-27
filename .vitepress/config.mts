@@ -22,6 +22,17 @@ export default defineConfig({
     ]
   ],
 
+  locales: {
+    root: {
+      label: 'English',
+      lang: 'en'
+    },
+    zh: {
+      label: '简体中文',
+      lang: 'zh', // 可选，将作为 `lang` 属性添加到 `html` 标签中
+    }
+  },
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/images/logo.png",
@@ -51,8 +62,7 @@ export default defineConfig({
             },
             {
               text: '源码编译安装',
-              // link: '/docs/getstart/installation/',
-              collapsed: true,
+              collapsed: false,
               items: [
                 {
                   text: '简介',
