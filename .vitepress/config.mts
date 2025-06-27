@@ -22,23 +22,12 @@ export default defineConfig({
     ]
   ],
 
-  locales: {
-    root: {
-      label: 'English',
-      lang: 'en'
-    },
-    zh: {
-      label: '简体中文',
-      lang: 'zh', // 可选，将作为 `lang` 属性添加到 `html` 标签中
-    }
-  },
-
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/images/logo.png",
     nav: [
       { text: '首页', link: '/' },
-      { text: '使用手册', link: '/docs/' },
+      { text: '使用手册', link: '/docs/guide' },
       { text: '联系我们', link: '/docs/contact' },
       { text: '演示', link: 'https://bbs.bbs-go.com' },
     ],
@@ -55,7 +44,7 @@ export default defineConfig({
         },
         {
           text: '🏠 项目概述',
-          link: '/docs/'
+          link: '/docs/introduction'
         },
         {
           text: '⚙️ 源码安装',
