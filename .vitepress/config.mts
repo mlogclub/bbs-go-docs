@@ -50,48 +50,48 @@ export default defineConfig({
     sidebar: {
       "/docs/": [
         {
-          text: '项目介绍',
+          text: '🏠 项目概述',
           link: '/docs/'
         },
         {
-          text: '安装文档',
+          text: '🚀 快速开始',
           items: [
             {
-              text: 'Docker安装',
+              text: '🐳 Docker 部署',
               link: '/docs/getstart/docker.html'
             },
             {
-              text: '源码编译安装',
+              text: '⚙️ 源码部署',
               collapsed: false,
               items: [
                 {
-                  text: '简介',
+                  text: '📋 部署说明',
                   link: '/docs/getstart/installation/index.html',
                 },
                 {
-                  text: 'server 模块安装',
+                  text: '🖥️ 后端服务',
                   collapsed: false,
                   items: [
                     {
-                      text: '安装Go语言环境',
+                      text: 'Go 环境',
                       link: '/docs/getstart/installation/server/install-go.html',
                     },
                     {
-                      text: 'server 模块安装',
+                      text: '服务部署',
                       link: '/docs/getstart/installation/server/install.html',
                     }
                   ]
                 },
                 {
-                  text: 'site 模块安装',
+                  text: '🌐 前端应用',
                   collapsed: false,
                   items: [
                     {
-                      text: 'nodejs 环境安装',
+                      text: 'Node.js 环境',
                       link: '/docs/getstart/installation/site/install-node.html',
                     },
                     {
-                      text: 'site 模块安装',
+                      text: '应用部署',
                       link: '/docs/getstart/installation/site/install-site.html',
                     }
                   ]
@@ -101,15 +101,15 @@ export default defineConfig({
           ]
         },
         {
-          text: '联系我们',
+          text: '📞 联系我们',
           link: '/docs/contact.md'
         },
         {
-          text: '更新日志',
+          text: '📝 更新日志',
           link: '/docs/changelog.md'
         },
         {
-          text: '常见问题',
+          text: '❓ 常见问题',
           link: '/docs/qa.md'
         },
       ]

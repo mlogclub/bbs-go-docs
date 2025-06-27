@@ -5,9 +5,36 @@
 https://api.github.com/repos/mlogclub/bbs-go/releases?page=1&per_page=100
 -->
 
+## v4.1.0 (2025-06-27)
+
+🌍 国际化支持 (i18n)
+
+- **多语言界面**：新增完整的中英文双语支持
+- **语言切换**：用户可自由切换界面语言，提供更好的国际化体验
+- **本地化数据**：支持多语言数据库初始化，包括节点、角色等基础数据
+- **管理后台**：管理界面同步支持多语言，方便不同地区的管理员使用
+
+✍️ 全新富文本编辑器
+
+- **现代化设计**：采用基于 TipTap 的全新富文本编辑器，界面更加美观现代
+- **丰富功能**：支持标题、列表、表格、代码块、引用、链接等多种排版元素
+- **主题适配**：完美支持明暗主题切换，自动适应用户系统偏好
+- **图片处理**：优化图片上传和显示，支持拖拽上传和可调整大小
+- **移动友好**：响应式设计，在移动设备上同样提供出色的编辑体验
+
+发布地址: <https://github.com/mlogclub/bbs-go/releases/tag/v4.1.0>
+
+## v4.0.6 (2025-06-27)
+
+- 新增安装引导；
+- 一键安装，鼠标双击即可启动；
+- 新增腾讯云照片上传支持；
+
+发布地址: <https://github.com/mlogclub/bbs-go/releases/tag/v4.0.6>
+
 ## v4.0.5 (2025-02-24)
 
-1. 全新的UI
+1. 全新的 UI
 2. 更细致的权限控制
 3. 更快捷的部署方式
 
@@ -15,7 +42,7 @@ https://api.github.com/repos/mlogclub/bbs-go/releases?page=1&per_page=100
 
 ## v4.0.3 (2024-09-17)
 
-1. 升级`Dockerfile`和`docker-compose.yml`，完善docker部署流程
+1. 升级`Dockerfile`和`docker-compose.yml`，完善 docker 部署流程
 2. 多处细节优化
 
 发布地址: <https://github.com/mlogclub/bbs-go/releases/tag/v4.0.3>
@@ -23,7 +50,7 @@ https://api.github.com/repos/mlogclub/bbs-go/releases?page=1&per_page=100
 ## v4.0.1 (2024-05-16)
 
 1. 重构搜索功能，使用`bleve`实现搜索
-2. 多项细节优化和BUG修复
+2. 多项细节优化和 BUG 修复
 
 发布地址: <https://github.com/mlogclub/bbs-go/releases/tag/v4.0.1>
 
@@ -277,7 +304,7 @@ https://api.github.com/repos/mlogclub/bbs-go/releases?page=1&per_page=100
 
 发布地址: <https://github.com/mlogclub/bbs-go/releases/tag/v3.1.8>
 
-本次主要更新`gorm 2.0`，`gorm` 是Go语言界`orm`产品的扛把子，在`gorm2.0`发布后，`bbs-go`也第一时间跟进并升级了`gorm2.0`，本次升级的gorm2.0 从零开始，深度优化性能、重构代码。
+本次主要更新`gorm 2.0`，`gorm` 是 Go 语言界`orm`产品的扛把子，在`gorm2.0`发布后，`bbs-go`也第一时间跟进并升级了`gorm2.0`，本次升级的 gorm2.0 从零开始，深度优化性能、重构代码。
 
 改进点如下：
 
@@ -285,7 +312,7 @@ https://api.github.com/repos/mlogclub/bbs-go/releases?page=1&per_page=100
 - 代码模块化
 - Context，批量插入，预编译模式，DryRun 模式，Join 预加载，Find To Map，Create From Map，FindInBatches
 - 支持嵌套事务，SavePoint，Rollback To SavePoint
-- SQL 生成器，命名参数，分组条件，Upsert，锁， 支持 Optimizer/Index/Comment Hint，子查询改进，使用SQL表达式、Context Valuer 进行 CRUD
+- SQL 生成器，命名参数，分组条件，Upsert，锁， 支持 Optimizer/Index/Comment Hint，子查询改进，使用 SQL 表达式、Context Valuer 进行 CRUD
 - 支持完整的自引用，改进 Join Table，批量数据的关联模式
 - 允许多个字段用于追踪 create、update 时间 ，支持 UNIX （毫/纳）秒
 - 支持字段权限：只读、只写、只创建、只更新、忽略
@@ -440,8 +467,6 @@ https://api.github.com/repos/mlogclub/bbs-go/releases?page=1&per_page=100
 - 重构代码，优化代码结构
 - 完善配置部署文档 ( http://docs.bbs-go.com/ )
 
-
-
 ## v3.0.2 (2019-10-29)
 
 发布地址: <https://github.com/mlogclub/bbs-go/releases/tag/v3.0.2>
@@ -467,7 +492,7 @@ https://api.github.com/repos/mlogclub/bbs-go/releases?page=1&per_page=100
 - 修改页面样式配色
 - 新增标签下的发帖引导
 - 后台支持多标签
-- 使用Vditor编辑器
+- 使用 Vditor 编辑器
 
 ## v2.0.0 (2019-09-03)
 
@@ -483,13 +508,13 @@ https://api.github.com/repos/mlogclub/bbs-go/releases?page=1&per_page=100
 
 发布地址: https://github.com/mlogclub/bbs-go/releases/tag/v1.0.5
 
-- 重构项目使用nuxt.js来渲染前端界面，GoLang只提供数据支撑
+- 重构项目使用 nuxt.js 来渲染前端界面，GoLang 只提供数据支撑
 
 ## v1.0.1 (2019-07-01)
 
 发布地址: https://github.com/mlogclub/bbs-go/releases/tag/v1.0.1
 
-- 修复两个数据越权访问的bug；
+- 修复两个数据越权访问的 bug；
 - 自己发布的主题帖支持修改；
 - 优化页面布局；
 - 完善后台帖子管理功能；
