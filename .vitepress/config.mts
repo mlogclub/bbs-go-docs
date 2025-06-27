@@ -50,11 +50,12 @@ export default defineConfig({
     sidebar: {
       "/docs/": [
         {
-          text: '🏠 项目概述',
-          link: '/docs/'
+          text: '🚀 快速开始',
+          link: '/docs/guide.html',
         },
         {
-          text: '🚀 快速开始',
+          text: '🏠 项目概述',
+          link: '/docs/'
         },
         {
           text: '⚙️ 源码安装',
