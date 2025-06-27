@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /docs/getstart/docker.html
+      link: /docs/docker.html
     - theme: alt
       text: 交流社区
       link: https://bbs.bbs-go.com

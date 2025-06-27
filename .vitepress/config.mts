@@ -55,36 +55,17 @@ export default defineConfig({
         },
         {
           text: '🚀 快速开始',
-          link: '/docs/getstart/docker.html',
-          // items: [
-          //   {
-          //     text: '🐳 Docker 部署',
-          //     link: '/docs/getstart/docker.html'
-          //   },
-          //   {
-          //     text: '🐳 Docker 部署',
-          //     link: '/docs/getstart/docker.html'
-          //   },
-          //   {
-          //     text: '🐳 Docker 部署',
-          //     link: '/docs/getstart/docker.html'
-          //   },
-          // ]
         },
         {
-          text: '🐳 Docker 部署',
-          link: '/docs/getstart/docker.html'
-        },
-        {
-          text: '⚙️ 源码部署',
+          text: '⚙️ 源码安装',
           // collapsed: false,
-          link: '/docs/getstart/installation/index.html',
+          link: '/docs/installation/index.html',
           items: [
             {
               items: [
                 {
-                  text: '📋 部署说明',
-                  link: '/docs/getstart/installation/index.html',
+                  text: '📋 代码结构',
+                  link: '/docs/installation/index.html',
                 },
                 {
                   text: '🖥️ 后端服务',
@@ -92,11 +73,11 @@ export default defineConfig({
                   items: [
                     {
                       text: 'Go 环境',
-                      link: '/docs/getstart/installation/server/install-go.html',
+                      link: '/docs/installation/server/install-go.html',
                     },
                     {
                       text: '服务部署',
-                      link: '/docs/getstart/installation/server/install.html',
+                      link: '/docs/installation/server/install.html',
                     }
                   ]
                 },
@@ -106,11 +87,11 @@ export default defineConfig({
                   items: [
                     {
                       text: 'Node.js 环境',
-                      link: '/docs/getstart/installation/site/install-node.html',
+                      link: '/docs/installation/site/install-node.html',
                     },
                     {
                       text: '应用部署',
-                      link: '/docs/getstart/installation/site/install-site.html',
+                      link: '/docs/installation/site/install-site.html',
                     }
                   ]
                 },
@@ -120,11 +101,11 @@ export default defineConfig({
                   items: [
                     // {
                     //   text: 'Node.js 环境',
-                    //   link: '/docs/getstart/installation/site/install-node.html',
+                    //   link: '/docs/installation/site/install-node.html',
                     // },
                     // {
                     //   text: '应用部署',
-                    //   link: '/docs/getstart/installation/site/install-site.html',
+                    //   link: '/docs/installation/site/install-site.html',
                     // }
                   ]
                 }
