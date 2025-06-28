@@ -264,7 +264,7 @@ Application started. Press CTRL+C to shut down.
 
 1. **查看官方文档**：[https://bbs-go.com](https://bbs-go.com)
 2. **问题反馈**：[https://bbs.bbs-go.com/topics/node/3](https://bbs.bbs-go.com/topics/node/3)
-3. **QQ 交流群**：[加入官方用户交流群](https://bbs-go.com/docs/contact.html)
+3. **QQ 交流群**：[加入官方用户交流群](https://bbs-go.com/docs/contact)
 4. **GitHub Issues**：[在项目页面提交问题](https://github.com/mlogclub/bbs-go/issues)
 
 ## 🚀 进阶使用

@@ -24,7 +24,7 @@ export default defineConfig({
           "/docs/": [
             {
               text: '🚀 Quick Start',
-              link: '/docs/guide.html',
+              link: '/docs/guide',
             },
             {
               text: '🏠 Project Overview',
@@ -32,23 +32,23 @@ export default defineConfig({
             },
             {
               text: '⚙️ Source Installation',
-              link: '/docs/installation/index.html',
+              link: '/docs/installation/index',
               items: [
                 {
                   text: '📋 Code Structure',
-                  link: '/docs/installation/index.html',
+                  link: '/docs/installation/index',
                 },
                 {
                   text: '🖥️ Backend Service',
                   collapsed: true,
                   items: [
                     {
-                      text: 'Go Environment',
-                      link: '/docs/installation/server/install-go.html',
+                      text: 'Install Go',
+                      link: '/docs/installation/server/install-go',
                     },
                     {
                       text: 'Service Deployment',
-                      link: '/docs/installation/server/install.html',
+                      link: '/docs/installation/server/install',
                     }
                   ]
                 },
@@ -57,12 +57,12 @@ export default defineConfig({
                   collapsed: true,
                   items: [
                     {
-                      text: 'Node.js Environment',
-                      link: '/docs/installation/site/install-node.html',
+                      text: 'Install Node.js',
+                      link: '/docs/installation/site/install-node',
                     },
                     {
                       text: 'Application Deployment',
-                      link: '/docs/installation/site/install-site.html',
+                      link: '/docs/installation/site/install-site',
                     }
                   ]
                 },
@@ -75,15 +75,15 @@ export default defineConfig({
             },
             {
               text: '📞 Contact Us',
-              link: '/docs/contact.md'
+              link: '/docs/contact'
             },
             {
               text: '📝 Changelog',
-              link: '/docs/changelog.md'
+              link: '/docs/changelog'
             },
             {
               text: '❓ FAQ',
-              link: '/docs/qa.md'
+              link: '/docs/qa'
             },
           ]
         },
@@ -109,7 +109,7 @@ export default defineConfig({
           "/zh/docs/": [
             {
               text: '🚀 快速开始',
-              link: '/zh/docs/guide.html',
+              link: '/zh/docs/guide',
             },
             {
               text: '🏠 项目概述',
@@ -117,23 +117,23 @@ export default defineConfig({
             },
             {
               text: '⚙️ 源码安装',
-              link: '/zh/docs/installation/index.html',
+              link: '/zh/docs/installation/index',
               items: [
                 {
                   text: '📋 代码结构',
-                  link: '/zh/docs/installation/index.html',
+                  link: '/zh/docs/installation/index',
                 },
                 {
                   text: '🖥️ 后端服务',
                   collapsed: true,
                   items: [
                     {
-                      text: 'Go 环境',
-                      link: '/zh/docs/installation/server/install-go.html',
+                      text: '安装Go',
+                      link: '/zh/docs/installation/server/install-go',
                     },
                     {
                       text: '服务部署',
-                      link: '/zh/docs/installation/server/install.html',
+                      link: '/zh/docs/installation/server/install',
                     }
                   ]
                 },
@@ -142,12 +142,12 @@ export default defineConfig({
                   collapsed: true,
                   items: [
                     {
-                      text: 'Node.js 环境',
-                      link: '/zh/docs/installation/site/install-node.html',
+                      text: '安装Node.js',
+                      link: '/zh/docs/installation/site/install-node',
                     },
                     {
                       text: '应用部署',
-                      link: '/zh/docs/installation/site/install-site.html',
+                      link: '/zh/docs/installation/site/install-site',
                     }
                   ]
                 },
@@ -160,15 +160,15 @@ export default defineConfig({
             },
             {
               text: '📞 联系我们',
-              link: '/zh/docs/contact.md'
+              link: '/zh/docs/contact'
             },
             {
               text: '📝 更新日志',
-              link: '/zh/docs/changelog.md'
+              link: '/zh/docs/changelog'
             },
             {
               text: '❓ 常见问题',
-              link: '/zh/docs/qa.md'
+              link: '/zh/docs/qa'
             },
           ]
         },

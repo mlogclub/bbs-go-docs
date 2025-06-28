@@ -292,7 +292,7 @@ pnpm config set registry https://registry.npmmirror.com
 
 成功安装 Node.js 环境后，您可以继续安装和配置 bbs-go 的 site 模块：
 
-1. [安装 site 模块](./install-site.html)
+1. [安装 site 模块](./install-site)
 2. 配置并启动 site 模块
 
 如果您还需要安装 admin 模块，请参考相关文档。

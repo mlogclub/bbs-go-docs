@@ -42,7 +42,7 @@ site 模块基于现代前端技术栈构建：
 node -v
 ```
 
-如果您尚未安装 Node.js 或版本不符合要求，请参考 [Node.js 环境安装](./install-node.html) 进行安装。
+如果您尚未安装 Node.js 或版本不符合要求，请参考 [Node.js 环境安装](./install-node) 进行安装。
 
 ### 确认 server 模块状态
 
@@ -53,7 +53,7 @@ site 模块需要与 server 模块通信，因此在安装 site 之前，请确�
 curl http://localhost:8082
 ```
 
-如果 server 模块未安装或未运行，请参考 [Server 模块安装](../server/install.html) 进行安装。
+如果 server 模块未安装或未运行，请参考 [Server 模块安装](../server/install) 进行安装。
 
 ### 获取源代码
 

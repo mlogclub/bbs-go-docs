@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /zh/docs/guide.html
+      link: /zh/docs/guide
     - theme: alt
       text: 交流社区
       link: https://bbs.bbs-go.com

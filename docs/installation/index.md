@@ -144,7 +144,7 @@ Server 模块是整个系统的基础，负责处理所有的业务逻辑和数�
 4. 配置数据库和其他服务
 5. 编译和运行 Server 模块
 
-详细安装步骤请参考：[Server 模块安装](./server/install-go.html)
+详细安装步骤请参考：[Server 模块安装](./server/install-go)
 
 ### Site 模块安装简介
 
@@ -156,7 +156,7 @@ Site 模块是面向用户的前台界面，负责内容的展示和用户交互
 4. 配置 Site 模块与 Server 的连接
 5. 编译和运行 Site 模块
 
-详细安装步骤请参考：[Site 模块安装](./site/install-node.html)
+详细安装步骤请参考：[Site 模块安装](./site/install-node)
 
 ### Admin 模块安装简介
 

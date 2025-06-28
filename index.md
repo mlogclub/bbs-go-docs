@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: Quick Start
-      link: /docs/guide.html
+      link: /docs/guide
     - theme: alt
       text: Community
       link: https://bbs.bbs-go.com
