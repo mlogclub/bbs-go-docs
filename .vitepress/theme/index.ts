@@ -11,11 +11,13 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
-      'layout-bottom': () => h(ContactFloat)
+      'layout-bottom': () => h(ContactFloat),
+      // 'layout-top': () => h(LanguageDetector)
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // 注册 Features 组件
+    // 注册组件
     app.component('Features', Features)
+    // app.component('LanguageDetector', LanguageDetector)
   }
 } satisfies Theme
