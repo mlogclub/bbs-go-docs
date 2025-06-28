@@ -4,34 +4,33 @@ layout: home
 
 hero:
   name: "BBS-GO"
-  text: "简洁对话，高效互动，社区新体验！"
-  tagline: 基于 Go 语言的社区系统
-  # tagline: BBS-GO是一款以Go语言为主要开发语言的简洁、响应式布局的开源论坛系统。旨在提供高效、易用的在线社区交流平台，注重简洁设计和良好用户体验。通过Go语言驱动，保证高性能和稳定性，同时提供简洁的代码结构，方便用户二次开发和定制。
+  text: "Simple dialogue, efficient interaction, new community experience!"
+  tagline: A community system based on Go language
+  # tagline: BBS-GO is an open-source forum system with a concise and responsive layout, primarily developed in Go language. It aims to provide an efficient and user-friendly online community communication platform, focusing on clean design and excellent user experience. Powered by Go language, it ensures high performance and stability while providing a clean code structure for easy secondary development and customization.
   image:
     src: /images/logo.png
     alt: BBS-GO
   actions:
     - theme: brand
-      text: 快速开始
+      text: Quick Start
       link: /docs/guide.html
     - theme: alt
-      text: 交流社区
+      text: Community
       link: https://bbs.bbs-go.com
 
-
 features:
-  - title: 简洁至上
-    details: bbs-go 的设计理念是简洁至上，注重去除冗余和不必要的复杂性，以提供清晰直观的用户界面和流畅的操作体验。
-  - title: 高度可定制
-    details: 提供清晰的代码结构和模块化的设计，使得用户可以轻松进行二次开发和定制，以满足不同用户群体的需求。
-  - title: 安全性设计
-    details: 采用先进的加密技术和安全最佳实践来保护用户数据和隐私。定期更新以应对最的网络安全威胁，确保社区的安全稳定。
-  - title: Go语言驱动
-    details: 使用Go语言开发，充分发挥Go语言高效的并发模型、简单易读的语法以及快速的编译速度，从而提供高性能、稳定的系统。
-  - title: 响应式布局
-    details: 采用响应式设计，确保用户无论在桌面、平板还是手机等设备上访问，都能获得一致且友好的界面展示，提高用户跨平台的可访问性。
-  - title: 社区驱动发展
-    details: 鼓励开源社区参与，社区驱动模式促进了软件的快速迭代和改进，也为用户提供了一个分享经验、求助和贡献的平台，增强了项目的活力和多样性。
+  - title: Simplicity First
+    details: BBS-GO's design philosophy is simplicity first, focusing on removing redundancy and unnecessary complexity to provide a clear and intuitive user interface and smooth operating experience.
+  - title: Highly Customizable
+    details: Provides clear code structure and modular design, enabling users to easily perform secondary development and customization to meet the needs of different user groups.
+  - title: Security Design
+    details: Adopts advanced encryption technology and security best practices to protect user data and privacy. Regularly updated to address the latest network security threats, ensuring community safety and stability.
+  - title: Go Language Powered
+    details: Developed with Go language, fully leveraging Go's efficient concurrency model, simple and readable syntax, and fast compilation speed to provide high-performance and stable systems.
+  - title: Responsive Layout
+    details: Adopts responsive design to ensure users get consistent and friendly interface display whether accessing from desktop, tablet, or mobile devices, improving cross-platform accessibility.
+  - title: Community-Driven Development
+    details: Encourages open-source community participation. The community-driven model promotes rapid iteration and improvement of software, providing users with a platform to share experiences, seek help, and contribute, enhancing project vitality and diversity.
 ---
 
 <Features />

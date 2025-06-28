@@ -3,9 +3,182 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "BBS-GO",
-  description: "BBS-GO 简洁对话，高效互动，社区新体验！",
+  description: "BBS-GO - Simple dialogue, efficient interaction, new community experience!",
   ignoreDeadLinks: 'localhostLinks',
   lastUpdated: false,
+  
+  locales: {
+    root: {
+      label: 'English',
+      lang: 'en-US',
+      title: 'BBS-GO',
+      description: 'BBS-GO - Simple dialogue, efficient interaction, new community experience!',
+      themeConfig: {
+        nav: [
+          { text: 'Home', link: '/' },
+          { text: 'Guide', link: '/docs/guide' },
+          { text: 'Contact', link: '/docs/contact' },
+          { text: 'Community', link: 'https://bbs.bbs-go.com' },
+        ],
+        sidebar: {
+          "/docs/": [
+            {
+              text: '🚀 Quick Start',
+              link: '/docs/guide.html',
+            },
+            {
+              text: '🏠 Project Overview',
+              link: '/docs/introduction'
+            },
+            {
+              text: '⚙️ Source Installation',
+              link: '/docs/installation/index.html',
+              items: [
+                {
+                  text: '📋 Code Structure',
+                  link: '/docs/installation/index.html',
+                },
+                {
+                  text: '🖥️ Backend Service',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Go Environment',
+                      link: '/docs/installation/server/install-go.html',
+                    },
+                    {
+                      text: 'Service Deployment',
+                      link: '/docs/installation/server/install.html',
+                    }
+                  ]
+                },
+                {
+                  text: '🌐 Frontend Application',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Node.js Environment',
+                      link: '/docs/installation/site/install-node.html',
+                    },
+                    {
+                      text: 'Application Deployment',
+                      link: '/docs/installation/site/install-site.html',
+                    }
+                  ]
+                },
+                {
+                  text: '🔧 Admin Panel',
+                  collapsed: true,
+                  items: []
+                }
+              ]
+            },
+            {
+              text: '📞 Contact Us',
+              link: '/docs/contact.md'
+            },
+            {
+              text: '📝 Changelog',
+              link: '/docs/changelog.md'
+            },
+            {
+              text: '❓ FAQ',
+              link: '/docs/qa.md'
+            },
+          ]
+        },
+        outline: {
+          level: [2, 5],
+          label: 'On this page'
+        }
+      }
+    },
+    zh: {
+      label: '简体中文',
+      lang: 'zh-CN',
+      title: 'BBS-GO',
+      description: 'BBS-GO 简洁对话，高效互动，社区新体验！',
+      themeConfig: {
+        nav: [
+          { text: '首页', link: '/zh/' },
+          { text: '使用手册', link: '/zh/docs/guide' },
+          { text: '联系我们', link: '/zh/docs/contact' },
+          { text: '社区', link: 'https://bbs.bbs-go.com' },
+        ],
+        sidebar: {
+          "/zh/docs/": [
+            {
+              text: '🚀 快速开始',
+              link: '/zh/docs/guide.html',
+            },
+            {
+              text: '🏠 项目概述',
+              link: '/zh/docs/introduction'
+            },
+            {
+              text: '⚙️ 源码安装',
+              link: '/zh/docs/installation/index.html',
+              items: [
+                {
+                  text: '📋 代码结构',
+                  link: '/zh/docs/installation/index.html',
+                },
+                {
+                  text: '🖥️ 后端服务',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Go 环境',
+                      link: '/zh/docs/installation/server/install-go.html',
+                    },
+                    {
+                      text: '服务部署',
+                      link: '/zh/docs/installation/server/install.html',
+                    }
+                  ]
+                },
+                {
+                  text: '🌐 前端应用',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Node.js 环境',
+                      link: '/zh/docs/installation/site/install-node.html',
+                    },
+                    {
+                      text: '应用部署',
+                      link: '/zh/docs/installation/site/install-site.html',
+                    }
+                  ]
+                },
+                {
+                  text: '🔧 管理后台',
+                  collapsed: true,
+                  items: []
+                }
+              ]
+            },
+            {
+              text: '📞 联系我们',
+              link: '/zh/docs/contact.md'
+            },
+            {
+              text: '📝 更新日志',
+              link: '/zh/docs/changelog.md'
+            },
+            {
+              text: '❓ 常见问题',
+              link: '/zh/docs/qa.md'
+            },
+          ]
+        },
+        outline: {
+          level: [2, 5],
+          label: '页面导航'
+        }
+      }
+    }
+  },
 
   head: [
     [
@@ -23,117 +196,10 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     logo: "/images/logo.png",
-    nav: [
-      { text: '首页', link: '/' },
-      { text: '使用手册', link: '/docs/guide' },
-      { text: '联系我们', link: '/docs/contact' },
-      { text: '演示', link: 'https://bbs.bbs-go.com' },
-    ],
 
     search: {
       provider: 'local'
-    },
-
-    sidebar: {
-      "/docs/": [
-        {
-          text: '🚀 快速开始',
-          link: '/docs/guide.html',
-        },
-        {
-          text: '🏠 项目概述',
-          link: '/docs/introduction'
-        },
-        {
-          text: '⚙️ 源码安装',
-          // collapsed: false,
-          link: '/docs/installation/index.html',
-          items: [
-            {
-              items: [
-                {
-                  text: '📋 代码结构',
-                  link: '/docs/installation/index.html',
-                },
-                {
-                  text: '🖥️ 后端服务',
-                  collapsed: true,
-                  items: [
-                    {
-                      text: 'Go 环境',
-                      link: '/docs/installation/server/install-go.html',
-                    },
-                    {
-                      text: '服务部署',
-                      link: '/docs/installation/server/install.html',
-                    }
-                  ]
-                },
-                {
-                  text: '🌐 前端应用',
-                  collapsed: true,
-                  items: [
-                    {
-                      text: 'Node.js 环境',
-                      link: '/docs/installation/site/install-node.html',
-                    },
-                    {
-                      text: '应用部署',
-                      link: '/docs/installation/site/install-site.html',
-                    }
-                  ]
-                },
-                {
-                  text: '🔧 管理后台',
-                  collapsed: true,
-                  items: [
-                    // {
-                    //   text: 'Node.js 环境',
-                    //   link: '/docs/installation/site/install-node.html',
-                    // },
-                    // {
-                    //   text: '应用部署',
-                    //   link: '/docs/installation/site/install-site.html',
-                    // }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          text: '📞 联系我们',
-          link: '/docs/contact.md'
-        },
-        {
-          text: '📝 更新日志',
-          link: '/docs/changelog.md'
-        },
-        {
-          text: '❓ 常见问题',
-          link: '/docs/qa.md'
-        },
-      ]
-    },
-
-    outline: {
-      /**
-       * outline 中要显示的标题级别。
-       * 单个数字表示只显示该级别的标题。
-       * 如果传递的是一个元组，第一个数字是最小级别，第二个数字是最大级别。
-       * `'deep'` 与 `[2, 6]` 相同，将显示从 `<h2>` 到 `<h6>` 的所有标题。
-       *
-       * @default 2
-       */
-      level: [2, 5],
-      /**
-       * 显示在 outline 上的标题。
-       *
-       * @default 'On this page'
-       */
-      label: '页面导航'
     },
 
     socialLinks: [
@@ -151,10 +217,8 @@ export default defineConfig({
       copyright: 'Copyright © ' + new Date().getFullYear().toString() + ' 武汉花贝科技有限公司 • <a href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备2022019684号-3</a>'
     },
 
-
     editLink: {
       pattern: 'https://github.com/mlogclub/bbs-go-docs/edit/master/:path'
     },
-
   }
 })
