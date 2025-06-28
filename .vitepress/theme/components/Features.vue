@@ -9,10 +9,10 @@
       <div class="feature-card">
         <h3>
           <MessageSquare class="icon" />
-          {{ texts.features.community.title }}
+          {{ texts.items.community.title }}
         </h3>
         <ul class="feature-list">
-          <li v-for="item in texts.features.community.items" :key="item">{{ item }}</li>
+          <li v-for="item in texts.items.community.items" :key="item">{{ item }}</li>
         </ul>
       </div>
 
@@ -20,10 +20,10 @@
       <div class="feature-card">
         <h3>
           <User class="icon" />
-          {{ texts.features.user.title }}
+          {{ texts.items.user.title }}
         </h3>
         <ul class="feature-list">
-          <li v-for="item in texts.features.user.items" :key="item">{{ item }}</li>
+          <li v-for="item in texts.items.user.items" :key="item">{{ item }}</li>
         </ul>
       </div>
 
@@ -31,10 +31,10 @@
       <div class="feature-card">
         <h3>
           <FileText class="icon" />
-          {{ texts.features.content.title }}
+          {{ texts.items.content.title }}
         </h3>
         <ul class="feature-list">
-          <li v-for="item in texts.features.content.items" :key="item">{{ item }}</li>
+          <li v-for="item in texts.items.content.items" :key="item">{{ item }}</li>
         </ul>
       </div>
 
@@ -42,10 +42,10 @@
       <div class="feature-card">
         <h3>
           <Star class="icon" />
-          {{ texts.features.points.title }}
+          {{ texts.items.points.title }}
         </h3>
         <ul class="feature-list">
-          <li v-for="item in texts.features.points.items" :key="item">{{ item }}</li>
+          <li v-for="item in texts.items.points.items" :key="item">{{ item }}</li>
         </ul>
       </div>
 
@@ -53,10 +53,10 @@
       <div class="feature-card">
         <h3>
           <Search class="icon" />
-          {{ texts.features.search.title }}
+          {{ texts.items.search.title }}
         </h3>
         <ul class="feature-list">
-          <li v-for="item in texts.features.search.items" :key="item">{{ item }}</li>
+          <li v-for="item in texts.items.search.items" :key="item">{{ item }}</li>
         </ul>
       </div>
 
@@ -64,10 +64,10 @@
       <div class="feature-card">
         <h3>
           <Activity class="icon" />
-          {{ texts.features.activity.title }}
+          {{ texts.items.activity.title }}
         </h3>
         <ul class="feature-list">
-          <li v-for="item in texts.features.activity.items" :key="item">{{ item }}</li>
+          <li v-for="item in texts.items.activity.items" :key="item">{{ item }}</li>
         </ul>
       </div>
     </div>
@@ -78,137 +78,16 @@
 import { MessageSquare, User, FileText, Star, Search, Activity } from 'lucide-vue-next'
 import { useData } from 'vitepress'
 import { computed } from 'vue'
+import { useI18n } from '../i18n'
 
 const { site } = useData()
+const { getLocaleConfig } = useI18n()
 
-// 多语言文本配置
-const i18nTexts = {
-  'en-US': {
-    title: 'Core Features',
-    subtitle: 'Simple to use, powerful features, meeting your community needs',
-    features: {
-      community: {
-        title: 'Community Interaction',
-        items: [
-          'Topic Discussions',
-          'Comments & Replies',
-          'Like & Bookmark',
-          'User Following'
-        ]
-      },
-      user: {
-        title: 'User System',
-        items: [
-          'Email Registration & Login',
-          'Personal Center Management',
-          'User Profile Settings',
-          'Message Notification System'
-        ]
-      },
-      content: {
-        title: 'Content Management',
-        items: [
-          'Article Publishing & Editing',
-          'Tag Classification Management',
-          'Comments & Interactions',
-          'Content Moderation Mechanism'
-        ]
-      },
-      points: {
-        title: 'Points System',
-        items: [
-          'Earn Points for Posts',
-          'Earn Points for Comments',
-          'Points Level System',
-          'Points Exchange Features'
-        ]
-      },
-      search: {
-        title: 'Search System',
-        items: [
-          'Full-text Search',
-          'Topic Search',
-          'Article Search',
-          'Precise Match Recommendations'
-        ]
-      },
-      activity: {
-        title: 'Activity System',
-        items: [
-          'Post Activities',
-          'Image Activities',
-          'Activity Comments',
-          'Activity Sharing'
-        ]
-      }
-    }
-  },
-  'zh-CN': {
-    title: '核心功能',
-    subtitle: '简单易用，功能强大，满足您的社区需求',
-    features: {
-      community: {
-        title: '社区互动',
-        items: [
-          '话题讨论',
-          '评论回复',
-          '点赞与收藏',
-          '用户关注'
-        ]
-      },
-      user: {
-        title: '用户系统',
-        items: [
-          '邮箱注册登录',
-          '个人中心管理',
-          '用户资料设置',
-          '消息通知系统'
-        ]
-      },
-      content: {
-        title: '内容管理',
-        items: [
-          '文章发布与编辑',
-          '标签分类管理',
-          '评论与互动',
-          '内容审核机制'
-        ]
-      },
-      points: {
-        title: '积分系统',
-        items: [
-          '发帖获取积分',
-          '评论获取积分',
-          '积分等级制度',
-          '积分兑换功能'
-        ]
-      },
-      search: {
-        title: '搜索系统',
-        items: [
-          '全文检索功能',
-          '话题搜索',
-          '文章搜索',
-          '精准匹配推荐'
-        ]
-      },
-      activity: {
-        title: '动态系统',
-        items: [
-          '发表动态',
-          '图片动态',
-          '动态评论',
-          '动态分享'
-        ]
-      }
-    }
-  }
-}
-
-// 根据当前语言获取文本
+// 获取当前语言的文本
 const texts = computed(() => {
   const currentLang = site.value.lang || 'en-US'
-  return i18nTexts[currentLang] || i18nTexts['en-US']
+  const config = getLocaleConfig(currentLang)
+  return config.features
 })
 </script>
 
